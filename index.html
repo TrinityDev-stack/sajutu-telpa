@@ -79,24 +79,37 @@
         <span></span><span></span><span></span>
       </button>
     </div>
-
-    <div class="mobile-menu" id="mobileMenu" hidden>
-      <ul>
-        <li><a href="/">Sākums</a></li>
-        <li><a href="/pakalpojumi/aromterapija/">Aromterapija</a></li>
-        <li><a href="/pakalpojumi/sonoterapija/">Sonoterapija</a></li>
-        <li><a href="/pakalpojumi/masazas/">Masāžas</a></li>
-        <li><a href="/pakalpojumi/davanu-kartes/">Dāvanu kartes</a></li>
-        <li><a href="/par-mums/">Par mums</a></li>
-        <li><a href="/jaunumi/">Jaunumi</a></li>
-        <li><a href="/kontakti/">Kontakti</a></li>
-      </ul>
-      <div class="mobile-cta">
-        <a href="tel:+37125904819" class="btn btn-outline btn-block">+371 25904819</a>
-        <a href="https://go.sajututelpa.lv/visi-pakalpojumi" target="_blank" rel="noopener" class="btn btn-primary btn-block">Pieraksties online</a>
-      </div>
-    </div>
   </header>
+
+  <!-- Mobile menu outside header: fixed position must not sit under backdrop-filter ancestor -->
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <ul>
+      <li><a href="/">Sākums</a></li>
+      <li><a href="/pakalpojumi/aromterapija/">Aromterapija</a></li>
+      <li><a href="/pakalpojumi/sonoterapija/">Sonoterapija</a></li>
+      <li><a href="/pakalpojumi/masazas/">Masāžas</a></li>
+      <li><a href="/pakalpojumi/davanu-kartes/">Dāvanu kartes</a></li>
+      <li><a href="/par-mums/">Par mums</a></li>
+      <li><a href="/jaunumi/">Jaunumi</a></li>
+      <li><a href="/kontakti/">Kontakti</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a href="tel:+37125904819" class="btn btn-outline btn-block">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        +371 25904819
+      </a>
+      <a href="https://go.sajututelpa.lv/visi-pakalpojumi" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="9" cy="20" r="1.7" stroke="currentColor" stroke-width="1.7"/>
+          <circle cx="17" cy="20" r="1.7" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M3 4h2l2.1 10.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Pieraksties online
+      </a>
+    </div>
+  </div>
 
   <main>
 
@@ -368,7 +381,7 @@
       <div class="container expert-grid">
         <div class="expert-image reveal" data-reveal="fade">
           <div class="expert-frame">
-            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dace Cīrule — aromterapijas un sonoterapijas speciāliste" loading="lazy" />
+            <img src="assets/image-1.jpg" alt="Dace Cīrule — aromterapijas un sonoterapijas speciāliste" loading="lazy" width="1600" height="1068" />
           </div>
           <div class="expert-quote">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -380,7 +393,7 @@
 
         <div class="expert-content reveal" data-reveal="up">
           <span class="eyebrow">Iepazīsties ar speciālisti</span>
-          <h2>Dace Cīrule — <em>Tava</em> Ceļvedīte Iekšējā Mierā</h2>
+          <h2>Dace Cīrule — <em>Tava</em> Ceļvede Iekšējā Mierā</h2>
           <p class="expert-lead">
             Sertificēta aromterapijas un sonoterapijas speciāliste, ar vairāk nekā 10 gadu praktisku pieredzi un nemainīgu kaislību pret to, ko viņa dara.
           </p>

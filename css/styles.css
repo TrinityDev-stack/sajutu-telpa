@@ -178,11 +178,15 @@ p { margin: 0; }
 .btn-outline {
   background: transparent;
   color: var(--primary);
-  border: 1.5px solid var(--primary);
+  border: none;
+  /* Ring instead of border: even curves on iOS; overflow visible avoids .btn clip */
+  box-shadow: 0 0 0 1.5px var(--primary);
+  overflow: visible;
 }
 .btn-outline:hover {
   background: var(--primary);
   color: #fff;
+  box-shadow: 0 0 0 1.5px var(--primary);
 }
 
 .link-arrow {
@@ -217,7 +221,7 @@ p { margin: 0; }
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 2001;
   background: rgba(255, 254, 251, 0.85);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid transparent;
@@ -420,8 +424,9 @@ p { margin: 0; }
   inset: var(--header-h) 0 0 0;
   background: var(--bg);
   padding: 32px 24px;
-  z-index: 90;
+  z-index: 2000;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   transform: translateX(-100%);
   transition: transform 0.4s var(--ease);
 }
@@ -437,7 +442,27 @@ p { margin: 0; }
   font-family: 'IBM Plex Serif', serif;
   border-bottom: 1px solid var(--border-soft);
 }
-.mobile-cta { display: flex; flex-direction: column; gap: 12px; }
+.mobile-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.mobile-cta .btn {
+  justify-content: space-between;
+  width: 100%;
+}
+.mobile-cta .btn svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+.mobile-cta .btn .mobile-cta-text {
+  text-align: right;
+  font-family: inherit;
+}
+.mobile-cta .btn:hover svg {
+  transform: none;
+}
 
 /* ========================================================
    HERO
@@ -1298,13 +1323,17 @@ p { margin: 0; }
   .hero-inner { grid-template-columns: 1fr; }
   .hero-content {
     padding: 48px 24px 40px;
-    order: 2;
+    order: 1;
+    border-radius: 18px 18px 0 0;
   }
   .hero-sub { max-width: none; }
   .hero-visual {
     height: 410px;
-    order: 1;
-    border-radius: 18px 18px 0 0;
+    order: 2;
+    border-radius: 0 0 18px 18px;
+  }
+  .hero-visual .hero-image {
+    border-radius: 0 0 18px 18px;
   }
   .hero-shape-1 {
     width: 320px;
