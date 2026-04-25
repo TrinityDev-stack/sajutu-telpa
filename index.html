@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privātprakse Jelgavā. Aromterapija, aromadiagnostika, Tibetas Planetāro skanošo trauku terapija, masāžas un skaņu meditācija. Pieraksts: +371 25904819." />
+  <title>Sajūtu Telpa Jelgavā | Aromterapija &amp; Skaņu Terapija</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23B07659' d='M16 4c2 4 6 6 10 6-4 2-6 6-6 10-2-4-6-6-10-6 4-2 6-6 6-10z'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Sajūtu Telpa — sākumlapa">
+        <img src="assets/logo.svg" alt="Sajūtu Telpa logotips" width="34" height="34" />
+      </a>
+
+      <nav class="primary-nav" aria-label="Galvenā navigācija">
+        <ul>
+          <li><a href="/">Sākums</a></li>
+          <li class="has-dropdown">
+            <button type="button" class="nav-trigger" aria-expanded="false" aria-haspopup="true">
+              Pakalpojumi
+              <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="dropdown" role="menu">
+              <a href="/pakalpojumi/aromterapija/" role="menuitem">
+                <strong>Aromterapija</strong>
+                <span>Aromadiagnostika &amp; ēteriskās eļļas</span>
+              </a>
+              <a href="/pakalpojumi/sonoterapija/" role="menuitem">
+                <strong>Sonoterapija</strong>
+                <span>Tibetas Planetārie skanošie trauki</span>
+              </a>
+              <a href="/pakalpojumi/masazas/" role="menuitem">
+                <strong>Masāžas</strong>
+                <span>Antistresa &amp; karsto akmeņu</span>
+              </a>
+              <a href="/pakalpojumi/davanu-kartes/" role="menuitem">
+                <strong>Dāvanu kartes</strong>
+                <span>Uzdāvini labsajūtu</span>
+              </a>
+            </div>
+          </li>
+          <li><a href="/par-mums/">Par mums</a></li>
+          <li><a href="/jaunumi/">Jaunumi</a></li>
+          <li><a href="/kontakti/">Kontakti</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="https://go.sajututelpa.lv/visi-pakalpojumi" class="header-book" target="_blank" rel="noopener" aria-label="Book A Session">
+          <span class="header-book-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle cx="9" cy="20" r="1.7" stroke="currentColor" stroke-width="1.7"/>
+              <circle cx="17" cy="20" r="1.7" stroke="currentColor" stroke-width="1.7"/>
+              <path d="M3 4h2l2.1 10.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="header-book-count">0</span>
+          </span>
+          <span>Pieteikt Seansu</span>
+        </a>
+        <a href="tel:+37125904819" class="header-call" aria-label="Zvanīt +371 25904819">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>+371 25904819</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Atvērt izvēlni">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <ul>
+        <li><a href="/">Sākums</a></li>
+        <li><a href="/pakalpojumi/aromterapija/">Aromterapija</a></li>
+        <li><a href="/pakalpojumi/sonoterapija/">Sonoterapija</a></li>
+        <li><a href="/pakalpojumi/masazas/">Masāžas</a></li>
+        <li><a href="/pakalpojumi/davanu-kartes/">Dāvanu kartes</a></li>
+        <li><a href="/par-mums/">Par mums</a></li>
+        <li><a href="/jaunumi/">Jaunumi</a></li>
+        <li><a href="/kontakti/">Kontakti</a></li>
+      </ul>
+      <div class="mobile-cta">
+        <a href="tel:+37125904819" class="btn btn-outline btn-block">+371 25904819</a>
+        <a href="https://go.sajututelpa.lv/visi-pakalpojumi" target="_blank" rel="noopener" class="btn btn-primary btn-block">Pieraksties online</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-panel">
+          <div class="hero-inner">
+            <div class="hero-content reveal" data-reveal="up">
+              <h1 class="hero-title">
+                Tu Neesi Viens.<br />
+                <em>Dziedināšana</em> Sākas Šeit
+              </h1>
+              <p class="hero-sub">
+                Sajūtu Telpa piedāvā profesionālu emocionālās labsajūtas atbalstu ar aromterapiju un skaņu terapiju.
+              </p>
+              <div class="hero-actions">
+                <a href="https://go.sajututelpa.lv/visi-pakalpojumi" class="btn btn-primary btn-lg hero-main-cta" target="_blank" rel="noopener">
+                  Pieteikt seansu
+                  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                </a>
+              </div>
+
+              <div class="hero-trust reveal" data-reveal="up" data-delay="120">
+                <div class="hero-trust-top">
+                  <div class="hero-avatars" aria-hidden="true">
+                    <span class="hero-avatar"><img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=80&q=80" alt="" loading="lazy" /></span>
+                    <span class="hero-avatar"><img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80" alt="" loading="lazy" /></span>
+                    <span class="hero-avatar"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=80&q=80" alt="" loading="lazy" /></span>
+                  </div>
+                  <div class="stars" aria-label="Vērtējums 5 no 5">
+                    <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                    <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                  </div>
+                </div>
+                <p class="trust-text">Vairāk nekā 300 klientu uzticas Sajūtu Telpai savam emocionālajam līdzsvaram.</p>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal" data-reveal="fade">
+              <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+              <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+              <div class="hero-image">
+                <img src="assets/hero-img3.webp" alt="Vīrietis mierpilnā vidē, kas simbolizē emocionālu līdzsvaru un atbalstu." loading="eager" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= LOGO/MARQUEE BAR ======================= -->
+    <section class="marquee-section">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>Aromterapija</span><span aria-hidden="true">✦</span>
+          <span>Sonoterapija</span><span aria-hidden="true">✦</span>
+          <span>Tibetas Planetārie trauki</span><span aria-hidden="true">✦</span>
+          <span>Aromadiagnostika</span><span aria-hidden="true">✦</span>
+          <span>Skaņu meditācija</span><span aria-hidden="true">✦</span>
+          <span>Karsto akmeņu masāža</span><span aria-hidden="true">✦</span>
+          <span>Hercu terapija</span><span aria-hidden="true">✦</span>
+          <!-- duplicate for seamless loop -->
+          <span>Aromterapija</span><span aria-hidden="true">✦</span>
+          <span>Sonoterapija</span><span aria-hidden="true">✦</span>
+          <span>Tibetas Planetārie trauki</span><span aria-hidden="true">✦</span>
+          <span>Aromadiagnostika</span><span aria-hidden="true">✦</span>
+          <span>Skaņu meditācija</span><span aria-hidden="true">✦</span>
+          <span>Karsto akmeņu masāža</span><span aria-hidden="true">✦</span>
+          <span>Hercu terapija</span><span aria-hidden="true">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT INTRO ======================= -->
+    <section class="about-intro">
+      <div class="container about-grid">
+        <div class="about-text reveal" data-reveal="up">
+          <span class="eyebrow eyebrow-light">Par Sajūtu Telpu</span>
+          <h2>Tava Iekšējā <em>Harmonija</em> Sākas Šeit</h2>
+          <p>
+            Sajūtu Telpa ir privātprakse Jelgavā, kur jau vairāk nekā desmit gadus tiekas profesionāla aromterapija, dziļa skaņu vibrāciju terapija un personīga uzmanība katram klientam. Mēs ticam, ka īsta atveseļošanās notiek, kad tiek aprūpēts gan ķermenis, gan emocijas, gan dvēsele.
+          </p>
+          <a href="/par-mums/" class="link-arrow">
+            Iepazīsties ar mums
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10m-4-4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+        </div>
+
+        <div class="about-gallery reveal" data-reveal="fade">
+          <div class="gallery-col">
+            <div class="gallery-img"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=400&q=80" alt="Relaksējoša masāža ar ēteriskajām eļļām" loading="lazy" /></div>
+            <div class="gallery-img"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=400&q=80" alt="Ēterisko eļļu pudelītes uz dabīga koka virsmas" loading="lazy" /></div>
+            <div class="gallery-img"><img src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&w=400&q=80" alt="Lavandas ēteriskā eļļa un ziedi" loading="lazy" /></div>
+          </div>
+          <div class="gallery-col gallery-col-offset">
+            <div class="gallery-img"><img src="https://images.unsplash.com/photo-1602192509154-0b900ee1f851?auto=format&fit=crop&w=400&q=80" alt="Tibetas Planetārais skanošais trauks" loading="lazy" /></div>
+            <div class="gallery-img"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=400&q=80" alt="Meditācija un iekšējais miers" loading="lazy" /></div>
+            <div class="gallery-img"><img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=400&q=80" alt="Spa un wellness atmosfēra" loading="lazy" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SERVICES ======================= -->
+    <section class="services" id="pakalpojumi">
+      <div class="container">
+        <div class="section-head reveal" data-reveal="up">
+          <span class="eyebrow">Pakalpojumi</span>
+          <h2>Pakalpojumi <em>Tavai</em> Labsajūtai</h2>
+          <p>Profesionāli risinājumi miera, līdzsvara un atveseļošanās ceļā — individuāli pielāgoti tieši tev.</p>
+        </div>
+
+        <div class="services-grid">
+          <a href="/pakalpojumi/aromterapija/" class="service-card reveal" data-reveal="up" data-delay="0">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2c2 4 5 5 5 9a5 5 0 1 1-10 0c0-4 3-5 5-9z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M9 13c.5 1.5 1.5 2 3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Aromterapija</h3>
+            <p>Aromadiagnostika ar 111 ēteriskajām eļļām, individuāli risinājumi sejas ādai un ikdienas labsajūtai.</p>
+            <span class="service-meta">No 40 EUR</span>
+            <span class="service-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </span>
+          </a>
+
+          <a href="/pakalpojumi/sonoterapija/" class="service-card reveal" data-reveal="up" data-delay="100">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.6"/>
+                <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3>Sonoterapija</h3>
+            <p>Tibetas Planetāro skanošo trauku hercu terapija — dziļa vibrāciju masāža ķermenim un nervu sistēmai.</p>
+            <span class="service-meta">No 50 EUR</span>
+            <span class="service-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </span>
+          </a>
+
+          <a href="/pakalpojumi/masazas/" class="service-card reveal" data-reveal="up" data-delay="200">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 14c2-3 5-3 9-3s7 0 9 3M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="9" cy="7" r="2" stroke="currentColor" stroke-width="1.6"/>
+              </svg>
+            </div>
+            <h3>Masāžas</h3>
+            <p>Antistresa un anti-age masāžas sejai, karsto bazalta akmeņu masāža un presoterapija ķermenim.</p>
+            <span class="service-meta">Pēc pieprasījuma</span>
+            <span class="service-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </span>
+          </a>
+
+          <a href="/pakalpojumi/davanu-kartes/" class="service-card reveal" data-reveal="up" data-delay="300">
+            <div class="service-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="7" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M3 11h18M12 7c-2-3-5-3-5 0s3 0 5 0c2 0 5 0 5 0s0-3-5 0z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Dāvanu kartes</h3>
+            <p>Uzdāvini tuvajiem cilvēkiem patiesu rūpi, mieru un sajūtas — Sajūtu Telpas dāvanu karte.</p>
+            <span class="service-meta">Pieejamas online</span>
+            <span class="service-arrow" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= STATS ======================= -->
+    <section class="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal" data-reveal="up">
+          <h3 class="counter" data-target="10" data-suffix="+">0</h3>
+          <p>Gadi profesionālas pieredzes aromterapijā un sonoterapijā</p>
+        </div>
+        <div class="stat reveal" data-reveal="up" data-delay="100">
+          <h3 class="counter" data-target="111">0</h3>
+          <p>Ēteriskās eļļas pilnajā aromadiagnostikas komplektā</p>
+        </div>
+        <div class="stat reveal" data-reveal="up" data-delay="200">
+          <h3 class="counter" data-target="20" data-suffix="+">0</h3>
+          <p>Hercu terapijas tehnikas dažādām dzīves situācijām</p>
+        </div>
+        <div class="stat reveal" data-reveal="up" data-delay="300">
+          <h3 class="counter" data-target="500" data-suffix="+">0</h3>
+          <p>Klienti, kas atraduši savu mieru Sajūtu Telpā</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= WHY US ======================= -->
+    <section class="why-us">
+      <div class="container why-grid">
+        <div class="why-content reveal" data-reveal="up">
+          <span class="eyebrow">Kāpēc Sajūtu Telpa</span>
+          <h2>Vieta, Kur <em>Tu</em> Esi Galvenais</h2>
+          <p>Sajūtu Telpā nav steigas un nav universālu risinājumu. Katrs seanss tiek veidots tieši tev — ņemot vērā tavu pašreizējo stāvokli, vajadzības un mērķus.</p>
+
+          <ul class="features-list">
+            <li>
+              <span class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Sertificēta speciāliste</strong>
+                <p>Dace Cīrule — Holistiskās medicīnas asociācijas biedre ar 10+ gadu pieredzi.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Individuāla pieeja</strong>
+                <p>Katrs seanss ir veidots pēc tavas situācijas — bez universāliem šabloniem.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Unikāla kombinācija</strong>
+                <p>Vienīgā vieta Jelgavā, kur aromterapija un Tibetas trauku sonoterapija strādā kopā.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l5 5L20 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div>
+                <strong>Mājīga, droša vide</strong>
+                <p>Plaša un mājīga telpa modes namā "Tēma", klusajā pilsētas centrā.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="why-visual reveal" data-reveal="fade">
+          <div class="why-image">
+            <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=700&q=80" alt="Profesionāla terapeita roku tehnika relaksējošā masāžā" loading="lazy" />
+          </div>
+          <div class="why-badge">
+            <div class="why-badge-num">10+</div>
+            <div class="why-badge-text">
+              <strong>Gadi pieredzē</strong>
+              <span>Dace Cīrule</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= EXPERT / DACE ======================= -->
+    <section class="expert">
+      <div class="container expert-grid">
+        <div class="expert-image reveal" data-reveal="fade">
+          <div class="expert-frame">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dace Cīrule — aromterapijas un sonoterapijas speciāliste" loading="lazy" />
+          </div>
+          <div class="expert-quote">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 11h-3v-3a4 4 0 0 1 4-4M17 11h-3v-3a4 4 0 0 1 4-4M4 11v6h6v-6M14 11v6h6v-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p>Aromterapija ir mana sirds lieta kopš 2015. gada — un tā vēl arvien turpinās.</p>
+          </div>
+        </div>
+
+        <div class="expert-content reveal" data-reveal="up">
+          <span class="eyebrow">Iepazīsties ar speciālisti</span>
+          <h2>Dace Cīrule — <em>Tava</em> Ceļvedīte Iekšējā Mierā</h2>
+          <p class="expert-lead">
+            Sertificēta aromterapijas un sonoterapijas speciāliste, ar vairāk nekā 10 gadu praktisku pieredzi un nemainīgu kaislību pret to, ko viņa dara.
+          </p>
+
+          <ul class="credentials">
+            <li><span>✦</span> Aromakosmetoloģija un aromterapijas pamatu kursi</li>
+            <li><span>✦</span> Ēterisko eļļu bioķīmija pie Ingrid Ghesquiere (Francija)</li>
+            <li><span>✦</span> Tibetas Planetāro skanošo trauku sonoterapija</li>
+            <li><span>✦</span> Vēdiskā astroloģija pie Gunas Vilkas</li>
+            <li><span>✦</span> Holistiskās medicīnas un naturopātijas asociācijas biedre</li>
+          </ul>
+
+          <a href="/par-mums/" class="btn btn-outline">
+            Vairāk par mums
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TESTIMONIALS ======================= -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head reveal" data-reveal="up">
+          <span class="eyebrow">Klientu pieredze</span>
+          <h2>Katrs Seanss Ir <em>Solis</em> Pretī Sev</h2>
+          <p>Lasi, ko stāsta klienti, kas izvēlējušies Sajūtu Telpu savai labsajūtai.</p>
+        </div>
+
+        <div class="carousel" id="testimonialCarousel" role="region" aria-label="Klientu atsauksmes">
+          <div class="carousel-track">
+            <article class="testimonial-card">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>
+                Aromadiagnostika bija negaidīti dziļa pieredze. Pirmo reizi sajutu, ka kāds tiešām saprot, kas ar mani notiek emocionāli. Sajūtu Telpa ir kļuvusi par manu drošo vietu.
+              </blockquote>
+              <div class="testimonial-author">
+                <strong>Anna K.</strong>
+                <span>Aromadiagnostika</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>
+                Tibetas trauku seansa laikā piedzīvoju kaut ko, ko grūti aprakstīt vārdos — kā ķermenis pats sāk dziedēties. Pēc seansa miegs ir kļuvis dziļāks, un dienā jūtos klātesošāka.
+              </blockquote>
+              <div class="testimonial-author">
+                <strong>Līga M.</strong>
+                <span>Sonoterapija</span>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="testimonial-stars">
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 20 20"><path d="M10 1.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.9z" fill="currentColor"/></svg>
+              </div>
+              <blockquote>
+                Hercu terapijas cikls bija mana lielākā dāvana sev. 10 nedēļas, kuras mainīja, kā es skatos uz sevi un savām attiecībām. Daces profesionalitāte un siltums ir nesalīdzināmi.
+              </blockquote>
+              <div class="testimonial-author">
+                <strong>Inese R.</strong>
+                <span>Hercu terapijas cikls</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="carouselPrev" aria-label="Iepriekšējā atsauksme">
+              <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M11 4L6 9l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </button>
+            <div class="carousel-dots" id="carouselDots"></div>
+            <button class="carousel-btn" id="carouselNext" aria-label="Nākamā atsauksme">
+              <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M7 4l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FAQ ======================= -->
+    <section class="faq">
+      <div class="container faq-grid">
+        <div class="faq-head reveal" data-reveal="up">
+          <span class="eyebrow">Biežāk uzdotie jautājumi</span>
+          <h2>Atbildes uz <em>Tavu</em> Pirmo Soli</h2>
+          <p>Ja vēl ir jautājumi — droši zvani vai raksti. Atbildam personīgi.</p>
+          <a href="tel:+37125904819" class="btn btn-primary">
+            Sazināties
+            <svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+        </div>
+
+        <div class="faq-list reveal" data-reveal="up" data-delay="150">
+          <details class="faq-item">
+            <summary>
+              <span>Kas ir aromadiagnostika un kā tā notiek?</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Aromadiagnostika ir aromterapijas metode, kurā ar 111 ēterisko eļļu palīdzību tiek noteikts tavs pašreizējais psihoemocionālais stāvoklis un emocionālā vai fiziskā diskomforta cēloņi. Pilnais seanss ilgst 2 stundas un maksā 65 EUR.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Kas ir Tibetas Planetārie skanošie trauki?</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Tie ir īpaši metāla trauki, kas noskaņoti uz Saules sistēmas planētu vibrāciju frekvencēm. Tikai 20–30% no izgatavotajiem traukiem sasniedz autentiskās planetārās īpašības. Tos aktivizē pieredzējuši meistari ar Vēdiskiem rituāliem.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Vai aromterapija ir droša grūtniecēm?</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Jā — Sajūtu Telpā strādājam ar grūtniecēm un zīdaiņiem, ievērojot visas kontrindikācijas un izvēloties tikai grūtniecībai drošas ēteriskās eļļas. Daces zināšanu bāze šajā jomā ir īpaši padziļināta.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Cik ilgs ir sonoterapijas seanss un cik tas maksā?</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Individuālais seanss — 1 stunda, 50 EUR. Pāru seanss — 1h 30 min, 80 EUR. Grupas meditācija (4–9 cilvēkiem) — 2 stundas, no 100 EUR (25 EUR no cilvēka).</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Vai bērni var apmeklēt seansus?</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Jā. Aromadiagnostika ir pieejama bērniem no 5 gadu vecuma ar speciālu komplektu. Sonoterapijas seansi bērniem — no 10 gadu vecuma. Birth tehnika piemērota arī mazākiem bērniem.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span>Kā veikt pierakstu?</span>
+              <span class="faq-toggle" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+              </span>
+            </summary>
+            <div class="faq-content">
+              <p>Visērtāk — caur online pieraksta sistēmu, kas pieejama 24/7. Vari arī zvanīt vai rakstīt uz +371 25904819. Visi seansi notiek pēc iepriekšēja pieraksta.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FINAL CTA ======================= -->
+    <section class="cta">
+      <div class="container cta-inner reveal" data-reveal="up">
+        <div class="cta-decor cta-decor-1" aria-hidden="true"></div>
+        <div class="cta-decor cta-decor-2" aria-hidden="true"></div>
+
+        <span class="eyebrow eyebrow-light">Sāc šodien</span>
+        <h2>Sāc Savu Ceļojumu Uz <em>Iekšējo</em> Mieru</h2>
+        <p>Pieraksties uz pirmo seansu — un atklāj, kā aromterapija un skaņu vibrācijas var mainīt tavu ikdienu.</p>
+        <div class="cta-actions">
+          <a href="https://go.sajututelpa.lv/visi-pakalpojumi" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            Pieraksties online
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          </a>
+          <a href="tel:+37125904819" class="btn btn-ghost-light btn-lg">
+            +371 25904819
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo logo-light">
+          <img src="assets/logo.svg" alt="Sajūtu Telpa logotips" width="30" height="30" />
+        </a>
+        <p>Privātprakse Jelgavā — aromterapija, Tibetas Planetāro skanošo trauku sonoterapija, masāžas un dāvanu kartes.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/dclounge.jelgava" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 22V12h3l1-4h-4V5.5c0-1 .5-2 2-2h2V0h-3c-3 0-5 2-5 5v3H6v4h3v10z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/sajutu.telpa/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@sajutu.telpa" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 4c0 2 1.5 4 4 4v3c-1.5 0-3-.5-4-1.5V16a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V4z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Pakalpojumi</h4>
+        <ul>
+          <li><a href="/pakalpojumi/aromterapija/">Aromterapija</a></li>
+          <li><a href="/pakalpojumi/sonoterapija/">Sonoterapija</a></li>
+          <li><a href="/pakalpojumi/masazas/">Masāžas</a></li>
+          <li><a href="/pakalpojumi/davanu-kartes/">Dāvanu kartes</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Uzņēmums</h4>
+        <ul>
+          <li><a href="/par-mums/">Par mums</a></li>
+          <li><a href="/jaunumi/">Jaunumi</a></li>
+          <li><a href="/galerija/">Galerija</a></li>
+          <li><a href="/kontakti/">Kontakti</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Kontakti</h4>
+        <ul>
+          <li>
+            <span>Adrese</span>
+            Elektrības iela 5a, Jelgava<br />Modes nams "Tēma"
+          </li>
+          <li>
+            <span>Tālrunis</span>
+            <a href="tel:+37125904819">+371 25904819</a>
+          </li>
+          <li>
+            <span>E-pasts</span>
+            <a href="mailto:info@sajututelpa.lv">info@sajututelpa.lv</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Sajūtu Telpa. Visas tiesības aizsargātas.</p>
+        <ul>
+          <li><a href="/privatuma-politika/">Privātuma politika</a></li>
+          <li><a href="/sikdatnes/">Sīkdatnes</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Atgriezties augšā" hidden>
+    <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 12l4-4 4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
